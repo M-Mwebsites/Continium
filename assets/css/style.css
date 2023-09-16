@@ -90,6 +90,19 @@ body {
     line-height: normal;
 }
 
+@media only screen and (max-width: 992px) {
+    #title {
+        padding-top: 250px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #title div img {
+        width: 300px;
+    }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -147,6 +160,18 @@ body {
     z-index: 2;
 }
 
+@media only screen and (max-width: 767px) {
+    .points1, .square2 {
+        display: none;
+    }
+    .points2 {
+        opacity: 0.1;
+    }
+    .square1 {
+        opacity: 0.5;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Mission
@@ -171,6 +196,12 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media only screen and (max-width: 992px) {
+    #mission {
+        padding-top: 100px;
+    }
 }
 
 
@@ -203,4 +234,15 @@ body {
 #about video {
     width: 648px;
     height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    #about {
+        flex-direction: column;
+        gap: 40px;
+    }
+    #about video {
+        width: 100%;
+        height: auto;
+    }
 }
