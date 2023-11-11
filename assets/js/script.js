@@ -86,7 +86,7 @@
     let scrolled = false;
     if (selectHeader) {
         const headerScrolled = () => {
-            if (window.scrollY > 270) {
+            if (window.scrollY > 210) {
                 document.getElementById('logo-header').classList.add('show');
                 document.getElementById('logo-title').classList.add('hide');
                 document.getElementById('logo-header').classList.remove('hide');
@@ -283,3 +283,60 @@ typewriter
   .typeString('We <b>provide data converters</b> for telecommunication, satellite, radar and other applications where extreme performance, high energy efficiency or low-cost (or all of these combined) matter.')
   .pauseFor(300)
   .start();
+
+
+  const carousel = document.getElementById('carousel');
+  const leftArrow = document.getElementById('left-arrow');
+  const rightArrow = document.getElementById('right-arrow');
+  
+  let itemsPerPage = 5;
+  let currentIndex = 0;
+  let autoSlideInterval;
+  
+  function updateItemsPerPage() {
+      itemsPerPage = window.innerWidth > 992 ? 5 : 2;
+  }
+  
+  function updateCarousel() {
+      const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+      const translateValue = -currentIndex * itemWidth;
+      carousel.style.transform = `translateX(${translateValue}px)`;
+  }
+  
+  function autoSlide() {
+      rightArrow.click();
+  }
+  
+  function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(autoSlide, 3000);
+  }
+  
+  leftArrow.addEventListener('click', () => {
+      currentIndex = currentIndex === 0 ? carousel.children.length - itemsPerPage : Math.max(currentIndex - itemsPerPage, 0);
+      updateCarousel();
+      resetAutoSlide();
+  });
+  
+  rightArrow.addEventListener('click', () => {
+      currentIndex = currentIndex + itemsPerPage >= carousel.children.length ? 0 : currentIndex + itemsPerPage;
+      updateCarousel();
+      resetAutoSlide();
+  });
+  
+  window.addEventListener('resize', () => {
+      updateItemsPerPage();
+      updateCarousel();
+  });
+  
+  // Initial setup
+  updateItemsPerPage();
+  updateCarousel();
+  
+  // Initial auto-slide setup
+  autoSlideInterval = setInterval(autoSlide, 3000);
+  
+  // Reset auto-slide on button click
+  leftArrow.addEventListener('click', resetAutoSlide);
+  rightArrow.addEventListener('click', resetAutoSlide);
+  
