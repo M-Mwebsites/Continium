@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white !important;
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.hide {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#stars {
+    position: absolute;
+	display: block;
+    width: 100%;
+    height: 100vh;
+	z-index: 1;
+}
+
+.link {
+    color: #1092CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #3bb0e2;
+    transition: 0.3s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #313131;
+    transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+#header .image {
+    padding-left: 10%;
+    align-self: center;
+}
+
+#header .image img {
+    width: 180px;
+}
+
+.item a {
+    text-transform: uppercase;
+    color: #000 !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+
+.menu {
+    padding-right: 10%;
+    align-self: center;
+}
+
+
+/*--------------------------------------------------------------
+# Title
+--------------------------------------------------------------*/
+
+#title {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 220px;
+}
+
+#title h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 150px;
+}
+
+#title p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+/*--------------------------------------------------------------
+# Decorations
+--------------------------------------------------------------*/
+
+.points1 {
+    position: absolute;
+    right: 0;
+    top: 155px;
+    width: 230px;
+    opacity: 1;
+}
+
+.square2 {
+    position: absolute;
+    top: 200px;
+}
+
+.points3 {
+    position: absolute;
+    top: 410px;
+    left: -130px;
+    width: 230px;
+    opacity: 0.5;
+}
+
+.points4 {
+    position: absolute;
+    top: 2000px;
+    right: 0px;
+    width: 230px;
+    opacity: 0.1;
+}
+
+.points5 {
+    position: absolute;
+    top: 700px;
+    left: -130px;
+    width: 230px;
+    opacity: 0.7;
+}
+
+.points6 {
+    position: absolute;
+    top: 3400px;
+    right: 0px;
+    width: 100px;
+    opacity: 0.6;
+}
+
+@keyframes slowScroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+.points1, .points4 {
+    animation: slowScroll 5s linear infinite alternate;
+}
+
+.square2, .points5 {
+    animation: slowScroll 3s linear infinite alternate;
+}
+
+.points3, .points6 {
+    animation: slowScroll 4s linear infinite alternate;
+}
+
+.dec2 {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .points1 {
+        top: 600px;
+        opacity: 0.1;
+    }
+    .points5 {
+        opacity: 0.1;
+        top: 6000px;
+    }
+    .points6 {
+        opacity: 0.1;
+        top: 8000px;
+    }
+    .points3 {
+        opacity: 0.1;
+        top: 4000px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Privacy policy
+--------------------------------------------------------------*/
+
+#privacy {
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 3;
+}
+
+#privacy p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+#privacy table {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#privacy table td {
+    padding-right: 20px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    margin-top: 100px;
+    padding: 20px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-between;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer .links {
+    display: flex;
+}
+
+#footer a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+#footer a:hover {
+    color: #d5d5d5;
+    transition: 0.3s;
+}
+
+#footer .links span {
+    padding: 0 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
