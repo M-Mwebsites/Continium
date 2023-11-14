@@ -8,6 +8,7 @@ body {
     color: black;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0;
 }
 
 .show {
@@ -138,7 +139,7 @@ body {
 #header {
     display: flex;
     justify-content: space-between;
-    height: 8vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -253,7 +254,14 @@ body {
     position: absolute;
     top: 750px;
     width: 172px;
-    opacity: 0.3;
+    opacity: 0.7;
+}
+
+.points6 {
+    position: absolute;
+    right: 0;
+    top: -120px;
+    width: 100px;
 }
 
 @keyframes slowScroll {
@@ -271,7 +279,7 @@ body {
     z-index: 2;
 }
 
-.points2, .points4 {
+.points2, .points4, .points6 {
     animation: slowScroll 3s linear infinite alternate;
     z-index: 2;
 }
@@ -516,6 +524,7 @@ body {
     font-weight: 400;
     line-height: normal;
     padding-bottom: 50px;
+    margin-bottom: 0;
 }
 
 #solution .text button {
@@ -592,6 +601,7 @@ body {
     padding-right: 10%;
     padding-top: 100px;
     text-align: center;
+    padding-bottom: 140px;
 }
 
 #partners h1 {
@@ -608,4 +618,209 @@ body {
     line-height: normal;
     letter-spacing: 4.51px;
     padding-bottom: 70px;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+#contact {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f2f2f2;
+    padding-top: 90px;
+}
+
+#contact h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+#contact form .row, #contact form .row2 {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 20px;
+}
+
+#contact form .row div, #contact form .row2 div {
+    display: grid;
+    width: 300px;
+}
+
+#contact form label {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+#contact form input, #contact form select {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#contact form input:focus, #contact form select:focus {
+    outline: none;
+}
+
+#contact form input::placeholder {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+#contact form select {
+    cursor: pointer;
+    padding: 1px 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M5 6h10l-5 9-5-9z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    padding-right: 2rem;
+}
+
+#contact form select:required:invalid {
+    color: #C8C8C8;
+}
+
+#contact form select option {
+    color: #000;
+}
+
+#contact form button {
+    width: 100px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #313131;
+    transition: 0.3s;
+}
+
+#contact .address {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+#contact .address h5 {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin: 0;
+}
+
+#contact .address a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact form .row2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #contact .address {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #contact form .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #contact form .row div, #contact form .row2 div {
+        max-width: 300px;
+        width: auto;
+    }
+    #contact form select {
+        width: 100%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    padding: 20px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-between;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer .links {
+    display: flex;
+}
+
+#footer a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+#footer a:hover {
+    color: #d5d5d5;
+    transition: 0.3s;
+}
+
+#footer .links span {
+    padding: 0 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

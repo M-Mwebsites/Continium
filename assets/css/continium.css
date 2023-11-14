@@ -1,0 +1,215 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white !important;
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.hide {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#stars {
+    position: absolute;
+	display: block;
+    width: 100%;
+    height: 100vh;
+	z-index: 1;
+}
+
+.link {
+    color: #1092CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #3bb0e2;
+    transition: 0.3s;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+#header .image {
+    padding-left: 10%;
+    align-self: center;
+}
+
+#header .image img {
+    width: 180px;
+}
+
+.item a {
+    text-transform: uppercase;
+    color: #000 !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+
+.menu {
+    padding-right: 10%;
+    align-self: center;
+}
+
+
+/*--------------------------------------------------------------
+# Title
+--------------------------------------------------------------*/
+
+#title {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 220px;
+}
+
+#title h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+#title img {
+    width: 128px;
+    height: 8px;
+    margin-bottom: 40px;
+}
+
+#title p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+/*--------------------------------------------------------------
+# Decorations
+--------------------------------------------------------------*/
+
+.points1 {
+    position: absolute;
+    right: 0;
+    top: 155px;
+    width: 230px;
+    opacity: 1;
+}
+
+.square2 {
+    position: absolute;
+    top: 200px;
+}
+
+.points3 {
+    position: absolute;
+    top: 410px;
+    left: -130px;
+    width: 230px;
+    opacity: 0.5;
+}
+
+@keyframes slowScroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+.points1 {
+    animation: slowScroll 5s linear infinite alternate;
+}
+
+.square2 {
+    animation: slowScroll 3s linear infinite alternate;
+}
+
+.points3 {
+    animation: slowScroll 4s linear infinite alternate;
+}
+
+.dec2 {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .points1 {
+        top: 600px;
+        opacity: 0.1;
+    }
+    .points3 {
+        display: none;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Sponsoring
+--------------------------------------------------------------*/
+
+#sponsoring {
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    gap: 10%;
+}
+
+#sponsoring h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    width: min-content;
+}
+
+#sponsoring p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+#sponsoring img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    #sponsoring {
+        flex-direction: column;
+    }
+}

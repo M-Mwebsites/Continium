@@ -267,6 +267,7 @@ function isElementInViewport(el) {
 }
 
 
+//typing text
 var app = document.getElementById('typed-text');
 
 var customNodeCreator = function(character) {
@@ -285,6 +286,7 @@ typewriter
   .start();
 
 
+//carousel
   const carousel = document.getElementById('carousel');
   const leftArrow = document.getElementById('left-arrow');
   const rightArrow = document.getElementById('right-arrow');
@@ -340,3 +342,9 @@ typewriter
   leftArrow.addEventListener('click', resetAutoSlide);
   rightArrow.addEventListener('click', resetAutoSlide);
   
+
+//year
+
+var dateObj = new Date();
+var y = dateObj.getUTCFullYear();
+document.getElementById("footerYear").innerText = y;
