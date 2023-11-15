@@ -6,15 +6,15 @@ $("#customForm").submit(function (event) {
     var company = $("#company").val();
     var reason = $("#reason").val();
 
-    var googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdLtx9_zCZrCO9jItCQtL29WXD4ti4m_M8CvsrF_nw93FlTNg/formResponse"; // Replace with your Google Form URL
+    var googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf_QtvOu5hh3ZByH7JMH55ofC_0LBcAdsXhU-F-Dfvxzow1eg/formResponse"; // Replace with your Google Form URL
 
     $.ajax({
         url: googleFormUrl,
         data: {
-            "entry.1524361955": name,
-            "entry.132605492": email,
-            "entry.1866305512": company,
-            "entry.1078397583": reason,
+            "entry.1383580364": name,
+            "entry.115097568": email,
+            "entry.1917148958": company,
+            "entry.1672362927": reason,
         },
         type: "POST",
         dataType: "xml",

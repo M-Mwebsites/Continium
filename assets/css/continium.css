@@ -8,6 +8,7 @@ body {
     color: black;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0;
 }
 
 .show {
@@ -41,6 +42,10 @@ body {
 .link:hover {
     color: #3bb0e2;
     transition: 0.3s;
+}
+
+:target {
+    scroll-margin-top: 25vh;
 }
 
 
@@ -140,6 +145,30 @@ body {
     opacity: 0.5;
 }
 
+.points4 {
+    position: absolute;
+    top: -2000px;
+    right: 0px;
+    width: 230px;
+    opacity: 0.1;
+}
+
+.points5 {
+    position: absolute;
+    top: -700px;
+    left: -130px;
+    width: 230px;
+    opacity: 0.7;
+}
+
+.points6 {
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    width: 100px;
+    opacity: 0.6;
+}
+
 @keyframes slowScroll {
     0% {
         transform: translateY(0);
@@ -150,15 +179,15 @@ body {
     }
 }
 
-.points1 {
+.points1, .points4 {
     animation: slowScroll 5s linear infinite alternate;
 }
 
-.square2 {
+.square2, .points5 {
     animation: slowScroll 3s linear infinite alternate;
 }
 
-.points3 {
+.points3, .points6 {
     animation: slowScroll 4s linear infinite alternate;
 }
 
@@ -173,6 +202,325 @@ body {
     }
     .points3 {
         display: none;
+    }
+    .points5, .points6 {
+        opacity: 0.1;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Offer
+--------------------------------------------------------------*/
+
+#offer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Specialists
+--------------------------------------------------------------*/
+
+#specialists {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#specialists h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+#specialists .specialist {
+    padding-top: 60px;
+}
+
+#specialists .specialist h5 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+}
+
+#specialists .specialist .job {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#specialists .specialist p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 0;
+}
+
+#specialists .specialist .links {
+    padding-top: 16px;
+}
+
+#specialists .specialist .links p {
+    margin: 0;
+}
+
+#specialists .specialist .links p a {
+    color: #1092CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#specialists .specialist .links p a:hover {
+    color: #37abdd;
+    transition: 0.3s;
+}
+
+
+/*--------------------------------------------------------------
+# Board
+--------------------------------------------------------------*/
+
+#board {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#board h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#board .row, #board .row .persons {
+    display: flex;
+    gap: 5%;
+}
+
+#board .row h4 {
+    text-align: center;
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+    transform: rotate(180deg) translateY(100%);
+    transform-origin: bottom center;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+}
+
+#board .row .persons {
+    align-self: center;
+}
+
+#board .persons .person {
+    flex: 1;
+    padding-left: 15px;
+}
+
+#board .persons .person img {
+    width: 115px;
+    height: 115px;
+    z-index: 3;
+    position: relative;
+}
+
+#board .persons .person .name {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+#board .persons .person .job {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#board .persons .person p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    #board .row .persons {
+        flex-direction: column;
+        gap: 60px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #board .row {
+        flex-direction: row-reverse;
+    }
+    #board .row h4 {
+        margin-right: -15px;
+    }
+    #board .persons .person {
+        padding-left: 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Career
+--------------------------------------------------------------*/
+
+#career {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#career h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    margin-bottom: 0;
+}
+
+#career h5 {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    width: 75%;
+}
+
+#career .properties {
+    display: flex;
+    padding-left: 40px;
+    gap: 15%;
+}
+
+#career .properties .property {
+    flex: 1;
+}
+
+#career .properties .property .number {
+    color: #C8C8C8;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+#career .properties .property .title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+#career .properties .property .description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+#career .jobs {
+    display: flex;
+    gap: 15%;
+    padding-left: 40px;
+}
+
+#career .jobs .job {
+    padding-top: 5%;
+    flex: 1;
+}
+
+#career .jobs .job .block {
+    width: 90px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #F2F2F2;
+    position: absolute;
+    z-index: -1;
+}
+
+#career .jobs .job p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+#career .jobs .job .dialog {
+    color: #1092CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0;
+}
+
+#career .jobs .job .dialog:hover {
+    color: #37abdd;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 992px) {
+    #career .properties {
+        gap: 30px;
+    }
+    #career h5 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #career .properties {
+        flex-direction: column;
+        gap: 0;
+        padding-left: 20px;
+    }
+    #career .jobs {
+        flex-direction: column;
+        padding-left: 20px;
     }
 }
 
@@ -211,5 +559,55 @@ body {
 @media only screen and (max-width: 767px) {
     #sponsoring {
         flex-direction: column;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    margin-top: 100px;
+    padding: 20px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-between;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer .links {
+    display: flex;
+}
+
+#footer a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+#footer a:hover {
+    color: #d5d5d5;
+    transition: 0.3s;
+}
+
+#footer .links span {
+    padding: 0 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    #footer {
+        flex-direction: column;
+        gap: 20px;
     }
 }
