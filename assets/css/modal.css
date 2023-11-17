@@ -1,0 +1,114 @@
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+.modal {
+    background: #a6a6a6cc;
+    transition-duration: 2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    border: none;
+}
+
+.modal-content {
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 16px;
+    padding-bottom: 40px;
+    border: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+    border-radius: 16px;
+    margin: 50px 0;
+    padding-bottom: 80px;
+}
+
+.modal-content span {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.modalText {
+    padding: 0px 80px;
+    color: black;
+}
+
+.modalText .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.modalText p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 150%;
+}
+
+.modalText ul {
+    margin-top: 5px;
+    line-height: 150%;
+}
+
+.modalText p, ul, ol {
+    font-size: 16px;
+}
+
+.modal a {
+    color: #1092CB;
+    text-decoration: none;
+    transition: 0.3s;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.modal a:hover {
+    color: #37abdd;
+    transition: 0.3s;
+}
+
+.modal .span {
+    font-size: 16px;
+    cursor: text;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .modalText {
+        padding: 20px 40px;
+    }
+
+    .modalText img {
+        width: 25px;
+    }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }

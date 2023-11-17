@@ -281,12 +281,11 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString('We <b>provide data converters</b> for telecommunication, satellite, radar and other applications where extreme performance, high energy efficiency or low-cost (or all of these combined) matter.')
+  .typeString('We <b>provide data converters</b> for telecommunication, satellite, radar and other applications where extreme performance, high energy efficiency or low-cost matter.')
   .pauseFor(300)
   .start();
 
 //year
-
 var dateObj = new Date();
 var y = dateObj.getUTCFullYear();
 document.getElementById("footerYear").innerText = y;

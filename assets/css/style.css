@@ -643,13 +643,13 @@ body {
 
 #contact form .row, #contact form .row2 {
     display: flex;
-    gap: 100px;
+    gap: 10%;
     padding-bottom: 20px;
 }
 
 #contact form .row div, #contact form .row2 div {
     display: grid;
-    width: 300px;
+    width: 326px;
 }
 
 #contact form label {
@@ -727,7 +727,7 @@ body {
 
 #contact .address {
     display: flex;
-    justify-content: space-between;
+    gap: 10%;
     padding-bottom: 100px;
     padding-top: 50px;
 }

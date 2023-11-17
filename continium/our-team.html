@@ -28,6 +28,7 @@
     <!-- Template Main CSS File -->
     <link href="../assets/css/ozmenu.css" rel="stylesheet">
     <link href="../assets/css/continium.css" rel="stylesheet">
+    <link href="../assets/css/modal.css" rel="stylesheet">
 
 </head>
 
@@ -258,33 +259,47 @@
             <div class="job">
                 <div class="block"></div>
                 <p>Analog Circuit Designer / Mixed-Signal Circuit Designer</p>
-                <p class="dialog" id="">View more →</p>
+                <p class="dialog" id="analog-circuit">View more →</p>
             </div>
             <div class="job">
                 <div class="block"></div>
                 <p>Physical Layout Designer</p>
-                <p class="dialog" id="">View more →</p>
+                <p class="dialog" id="physical-layout">View more →</p>
             </div>
             <div class="job">
                 <div class="block"></div>
                 <p>Digital HDL Circuit Designer</p>
-                <p class="dialog" id="">View more →</p>
+                <p class="dialog" id="digital-hdl">View more →</p>
             </div>
         </div>
         <div class="jobs">
             <div class="job">
                 <div class="block"></div>
                 <p>Electronic component Verification Engineer</p>
-                <p class="dialog" id="">View more →</p>
+                <p class="dialog" id="electronic-component">View more →</p>
             </div>
             <div class="job">
                 <div class="block"></div>
                 <p>Project Manager for Electronic product development</p>
-                <p class="dialog" id="">View more →</p>
+                <p class="dialog" id="project-manager">View more →</p>
             </div>
             <div class="job"></div>
         </div>
     </section>
+
+    <!-- The Modal -->
+    <div id="dialog" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modalText">
+                <h4 class="title" id="dialogTitle"></h4>
+                <div id="dialogText"></div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -309,6 +324,7 @@
     <!-- JS Files -->
     <script src="../assets/js/ozmenu.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/modal.js"></script>
 
 </body>
 
