@@ -9,10 +9,15 @@ const closeMenu = document.querySelector(".menu-close");
 const menuDiv = document.querySelector(".ozmenu");
 const menu = document.querySelector(".ozmenu-nav");
 const dropDowns = menu.getElementsByClassName("nav-dropdown");
+const links = menu.querySelectorAll(".item-close");
 const dropDownsChild = menu.querySelectorAll('.dropdown .nav-dropdown');
 
 openMenu.addEventListener("click", menuToggle);
 closeMenu.addEventListener("click", menuToggle);
+
+for (var i=0; i < links.length; i++) {
+    links[i].addEventListener("click", menuToggle);
+}
 
 document.body.insertAdjacentHTML("beforeend", "<div id='menu-overlay'></div>");
 document.querySelector("#menu-overlay").addEventListener("click", menuToggle);
