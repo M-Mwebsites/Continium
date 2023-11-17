@@ -218,9 +218,47 @@ body {
     padding-right: 10%;
 }
 
+#offer h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 100px;
+}
 
+#offer h4 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 60px;
+}
 
+#offer p, #offer ul {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
 
+#offer ul {
+    margin-bottom: 30px;
+}
+
+#offer a {
+    color: #1092CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#offer a:hover {
+    color: #37abdd;
+    transition: 0.3s;
+}
 
 /*--------------------------------------------------------------
 # Specialists
@@ -546,10 +584,11 @@ body {
 }
 
 #sponsoring p {
-    font-size: 22px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    max-width: 300px;
 }
 
 #sponsoring img {
