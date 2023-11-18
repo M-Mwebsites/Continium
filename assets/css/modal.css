@@ -60,6 +60,10 @@
     padding-bottom: 20px;
 }
 
+.modal-product .modalText .title {
+    max-width: 70%;
+}
+
 .modalText p {
     margin-top: 30px;
     margin-bottom: 0;
@@ -69,6 +73,10 @@
 .modalText ul {
     margin-top: 5px;
     line-height: 150%;
+}
+
+.modal-product .modalText ul {
+    padding-left: 20px;
 }
 
 .modalText p, ul, ol {
@@ -89,12 +97,79 @@
     transition: 0.3s;
 }
 
+.modal-product a {
+    color: #65AB99;
+    text-decoration: none;
+    transition: 0.3s;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.modal-product a:hover {
+    color: #8ed1c1;
+    transition: 0.3s;
+}
+
 .modal .span {
     font-size: 16px;
     cursor: text;
 }
 
-@media (max-width: 768px) {
+.modal-product .image {
+    text-align: right;
+}
+
+.modal-product .image img {
+    width: 80%;
+}
+
+.modal-product .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.modal-product img {
+    width: 55%;
+    height: 100%;
+}
+
+.modal-product .quote {
+    display: flex;
+    margin-top: 50px;
+    gap: 20%;
+}
+
+.modal-product .quote div {
+    background: linear-gradient(to right, #f2f2f2 50%, white 50%);
+    padding-left: 80px;
+    margin-left: -80px;
+    padding-bottom: 30px;
+}
+
+.modal-product .quote img {
+    width: 90px;
+    align-self: flex-end;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+    .modal-product .flex {
+        flex-direction: column;
+    }
+    .modal-product img {
+        width: 100%;
+    }
+    .modal-product .quote {
+        gap: 5%;
+    }
+    .modal-product .quote img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 767px) {
     .modal-content {
         width: 90%;
     }
@@ -105,6 +180,22 @@
 
     .modalText img {
         width: 25px;
+    }
+    .modal-product img {
+        width: 100%;
+    }
+    .modal-product .quote {
+        flex-direction: column;
+        gap: 0;
+    }
+    .modal-product .quote div {
+        padding-left: 40px;
+        margin-left: -40px;
+    }
+    .modal-product .quote img {
+        width: 70px;
+        height: auto;
+        margin-top: -25px;
     }
 }
 

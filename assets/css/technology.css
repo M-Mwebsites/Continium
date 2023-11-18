@@ -1,0 +1,493 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white !important;
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.hide {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#stars {
+    position: absolute;
+	display: block;
+    width: 100%;
+    height: 100vh;
+	z-index: 1;
+}
+
+.link {
+    color: #1092CB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #3bb0e2;
+    transition: 0.3s;
+}
+
+:target {
+    scroll-margin-top: 25vh;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+#header .image {
+    padding-left: 10%;
+    align-self: center;
+}
+
+#header .image img {
+    width: 180px;
+}
+
+.item a {
+    text-transform: uppercase;
+    color: #000 !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+
+.menu {
+    padding-right: 10%;
+    align-self: center;
+}
+
+
+/*--------------------------------------------------------------
+# Title
+--------------------------------------------------------------*/
+
+#title {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 220px;
+}
+
+#title h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+#title img {
+    width: 128px;
+    height: 8px;
+    margin-bottom: 40px;
+}
+
+#title p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+#title a {
+    color: #65AB99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+#title a:hover {
+    color: #8ed1c1;
+    transition: 0.3s;
+}
+
+#title li{
+    padding-bottom: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Decorations
+--------------------------------------------------------------*/
+
+.points1 {
+    position: absolute;
+    right: 0;
+    top: 155px;
+    width: 230px;
+    opacity: 1;
+}
+
+.square2 {
+    position: absolute;
+    top: 200px;
+}
+
+.points3 {
+    position: absolute;
+    top: 410px;
+    left: -130px;
+    width: 230px;
+    opacity: 0.5;
+}
+
+.points4 {
+    position: absolute;
+    top: -2000px;
+    right: 0px;
+    width: 230px;
+    opacity: 0.1;
+}
+
+.points5 {
+    position: absolute;
+    top: -700px;
+    left: -130px;
+    width: 230px;
+    opacity: 0.7;
+}
+
+.points6 {
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    width: 100px;
+    opacity: 0.6;
+}
+
+@keyframes slowScroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+.points1, .points4 {
+    animation: slowScroll 5s linear infinite alternate;
+}
+
+.square2, .points5 {
+    animation: slowScroll 3s linear infinite alternate;
+}
+
+.points3, .points6 {
+    animation: slowScroll 4s linear infinite alternate;
+}
+
+.dec2 {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .points1 {
+        top: 600px;
+        opacity: 0.1;
+    }
+    .points3 {
+        display: none;
+    }
+    .points5, .points6 {
+        opacity: 0.1;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Product
+--------------------------------------------------------------*/
+
+#product {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#product h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-bottom: 0;
+}
+
+#product h5 {
+    color: #C8C8C8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    width: 75%;
+}
+
+#product .properties {
+    display: flex;
+    padding-left: 40px;
+    gap: 15%;
+}
+
+#product .properties .property {
+    flex: 1;
+}
+
+#product .properties .property .number {
+    color: #C8C8C8;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 0;
+}
+
+#product .properties .property .title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+
+#product .properties .property .description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+#product .items {
+    display: flex;
+    padding-left: 40px;
+    gap: 5%;
+}
+
+#product .items .items-inner {
+    display: flex;
+    gap: 10%;
+    flex: 1;
+}
+
+#product .items .item {
+    padding-top: 5%;
+    flex: 1;
+}
+
+#product .items .item .block {
+    width: 90px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #F2F2F2;
+    position: absolute;
+    z-index: -1;
+}
+
+#product .items .item p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+#product .items .item .dialog {
+    color: #65AB99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0;
+}
+
+#product .items .item .dialog:hover {
+    color: #8ed1c1;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 992px) {
+    #product .properties {
+        gap: 30px;
+    }
+    #product h5 {
+        width: 100%;
+    }
+    #product .items {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #product .properties {
+        flex-direction: column;
+        gap: 0;
+        padding-left: 20px;
+    }
+    #product .items {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #product .items .items-inner {
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Graph
+--------------------------------------------------------------*/
+
+#graph {
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#graph div {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+#graph div p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    align-self: flex-end;
+    padding-bottom: 30px;
+}
+
+#graph div p a {
+    color: #65AB99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+#graph div p a:hover {
+    color: #8ed1c1;
+    transition: 0.3s;
+}
+
+#graph div img {
+    max-width: 60%;
+}
+
+#graph .text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+@media only screen and (max-width: 992px) {
+    #graph div {
+        flex-direction: column;
+        gap: 0;
+    }
+    #graph div p {
+        padding-bottom: 0;
+    }
+    #graph div img {
+        max-width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    margin-top: 100px;
+    padding: 20px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-between;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer .links {
+    display: flex;
+}
+
+#footer a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+#footer a:hover {
+    color: #d5d5d5;
+    transition: 0.3s;
+}
+
+#footer .links span {
+    padding: 0 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
