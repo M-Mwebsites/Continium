@@ -177,7 +177,7 @@ body {
 
 .points5 {
     position: absolute;
-    top: -700px;
+    top: -300px;
     left: -130px;
     width: 230px;
     opacity: 0.7;
@@ -185,7 +185,7 @@ body {
 
 .points6 {
     position: absolute;
-    top: 750px;
+    top: -850px;
     right: 0px;
     width: 100px;
     opacity: 0.6;
@@ -223,10 +223,14 @@ body {
         opacity: 0.1;
     }
     .points3 {
-        display: none;
+        top: 2000px;
+        opacity: 0.3;
     }
     .points5, .points6 {
         opacity: 0.1;
+    }
+    .points5 {
+        top: -3000px;
     }
 }
 
@@ -238,6 +242,95 @@ body {
 #wireless {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+#wireless h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+#wireless .flex1, #wireless .flex2 {
+    display: flex;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+#wireless .flex1 p {
+    flex: 1;
+}
+
+#wireless .flex1 img, #wireless .flex2 img {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+#wireless p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+#wireless a {
+    color: #65AB99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+#wireless a:hover {
+    color: #8ed1c1;
+    transition: 0.3s;
+}
+
+#wireless .right {
+    text-align: right;
+}
+
+#wireless .right img {
+    width: 500px;
+}
+
+#wireless .more {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    #wireless .flex1, #wireless .flex2 {
+        flex-direction: column;
+        gap: 0px;
+    }
+    #wireless .flex1 img, #wireless .flex2 img {
+        width: 80%;
+        height: 100%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #wireless .flex1 img, #wireless .flex2 img {
+        width: 100%;
+    }
+    #wireless .right {
+        text-align: left;
+    }
+    #wireless .right img {
+        width: 100%;
+    }
 }
 
 
@@ -256,7 +349,6 @@ body {
     font-weight: 700;
     line-height: normal;
     margin-top: 80px;
-    margin-bottom: 80px;
     margin-bottom: 0;
 }
 
