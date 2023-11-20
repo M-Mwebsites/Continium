@@ -199,6 +199,9 @@ body {
         padding-top: 250px;
         padding-bottom: 50px;
     }
+    #title div h2 {
+        font-size: 19px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -296,7 +299,8 @@ body {
 
 @media only screen and (max-width: 992px) {
     .points5 {
-        top: 600px;
+        top: 1130px;
+        left: -80px;
     }
 }
 
@@ -307,14 +311,8 @@ body {
     .points2, .points3, .points4 {
         opacity: 0.1;
     }
-    .square1 {
+    .square1, .points5 {
         opacity: 0.5;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .points5 {
-        top: 850px;
     }
 }
 
@@ -348,14 +346,10 @@ body {
     #mission {
         padding-top: 100px;
     }
-}
-
-@media only screen and (max-width: 500px) {
     #mission p {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
-
 
 /*--------------------------------------------------------------
 # About
@@ -485,6 +479,9 @@ body {
     #about-us p {
         width: 100%;
     }
+    #about-us h2 {
+        font-size: 19px;
+    }
 }
 
 
@@ -554,7 +551,7 @@ body {
     padding: 40px 80px 60px;
     display: flex;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
 }
 
 #solution .image img {
@@ -576,6 +573,9 @@ body {
     }
     #solution .image img {
         max-width: 80%;
+    }
+    #solution .text h2 {
+        font-size: 19px;
     }
 }
 
@@ -618,6 +618,12 @@ body {
     line-height: normal;
     letter-spacing: 4.51px;
     padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 992px) {
+    #partners h2 {
+        font-size: 19px;
+    }
 }
 
 
