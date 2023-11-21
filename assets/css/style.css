@@ -45,8 +45,9 @@ body {
 }
 
 #carousel .carousel-item {
-    flex: 0 0 20%; /* Set width for 4 items visible at a time */
+    flex: 0 0 25%; /* Set width for 4 items visible at a time */
     box-sizing: border-box;
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 992px) {

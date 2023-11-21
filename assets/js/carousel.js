@@ -3,12 +3,12 @@ const carousel = document.getElementById('carousel');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 
-let itemsPerPage = 5;
+let itemsPerPage = 4;
 let currentIndex = 0;
 let autoSlideInterval;
 
 function updateItemsPerPage() {
-    itemsPerPage = window.innerWidth > 992 ? 5 : 2;
+    itemsPerPage = window.innerWidth > 992 ? 4 : 2;
 }
 
 function updateCarousel() {
