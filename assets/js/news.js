@@ -22,8 +22,8 @@ function myItems(jsonString) {
         });
 
         //date format
-        const [datePart, timePart] = array[0].split(' ');
-        const dateObject = new Date(datePart);
+        const date = array[2];
+        const dateObject = new Date(date);
         const options = { day: 'numeric', month: 'long', year: 'numeric' };
         let formattedDate = dateObject.toLocaleDateString('en-US', options);
         const [month, day, year] = formattedDate.split(/[ ,]+/);
