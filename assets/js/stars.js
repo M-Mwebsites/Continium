@@ -5,11 +5,11 @@
  */
 
 // Settings
-var particleCount = 40,
+var particleCount = 50,
 	flareCount = 0,
 	motion = 0.05,
 	tilt = 0.0,
-	color = '#A2A2A2',
+	color = '#2ca3d6',
 	particleSizeBase = 0,
 	particleSizeMultiplier = 0,
 	flareSizeBase = 100,
