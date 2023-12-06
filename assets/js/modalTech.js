@@ -43,7 +43,7 @@ dialog2.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/wp-content/uploads/2022/06/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
             <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
         </div>
         <img src="assets/img/quote.png">
@@ -70,7 +70,7 @@ dialog3.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/wp-content/uploads/2022/06/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
             <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
         </div>
         <img src="assets/img/quote.png">
@@ -97,7 +97,7 @@ dialog4.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/wp-content/uploads/2022/06/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
             <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
         </div>
         <img src="assets/img/quote.png">
@@ -124,7 +124,7 @@ dialog5.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/wp-content/uploads/2022/06/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
             <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
         </div>
         <img src="assets/img/quote.png">
