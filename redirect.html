@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script type="text/javascript">
+    const endpoints = [
+      "news",
+      "our-team",
+      "our-solution",
+      "sponsoring",
+      "impressum",
+      "redirect",
+      "about-us",
+      "our-products",
+      "privacy-policy"
+    ]
+
+    const path = location.pathname
+    if(endpoints.includes(path)) {
+      location.replace(`${location.origin}${path}.html`)
+    }
+
+</script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <center><h1>404 Not Found</h1></center>
+</body>
+</html>
