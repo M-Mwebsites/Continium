@@ -210,7 +210,7 @@ body {
 @media only screen and (max-width: 992px) {
     #title {
         padding-top: 200px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
     #title div h2 {
         font-size: 19px;
@@ -237,7 +237,7 @@ body {
 .points1 {
     position: absolute;
     right: 0;
-    top: 355px;
+    top: 400px;
     width: 230px;
 }
 
@@ -319,8 +319,9 @@ body {
 
 @media only screen and (max-width: 767px) {
     .points1 {
-        width: 180px;
-        top: 450px;
+        top: 850px;
+        z-index: 4;
+        opacity: 0.5;
     }
     .square2 {
         display: none;
@@ -353,7 +354,7 @@ body {
     gap: 15%;
     align-items: flex-end;
     background-color: #f2f2f2;
-    background: linear-gradient(to bottom, white 0%, white 55%, #f2f2f2 55%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, white 0%, white 58%, #f2f2f2 58%, #f2f2f2 100%);
 }
 
 #mission img {
@@ -373,6 +374,12 @@ body {
     padding-right: 10%;
 }
 
+@media only screen and (max-width: 1537px) {
+    #mission {
+        background: linear-gradient(to bottom, white 0%, white 50%, #f2f2f2 50%, #f2f2f2 100%);
+    }
+}
+
 @media only screen and (max-width: 1353px) {
     #mission {
         background: linear-gradient(to bottom, white 0%, white 45%, #f2f2f2 45%, #f2f2f2 100%);
@@ -385,7 +392,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1059px) {
+@media only screen and (max-width: 1065px) {
     #mission {
         background: linear-gradient(to bottom, white 0%, white 30%, #f2f2f2 30%, #f2f2f2 100%);
     }
@@ -395,9 +402,11 @@ body {
     #mission {
         padding-top: 100px;
         background: white;
+        flex-direction: column;
     }
     #mission img {
-        display: none;
+        width: 50%;
+        margin: 0 auto;
     }
     #mission p {
         text-align: center;
@@ -418,7 +427,7 @@ body {
     padding-top: 220px;
     justify-content: space-between;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
 
 #about h2 {
