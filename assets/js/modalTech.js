@@ -43,8 +43,16 @@ dialog2.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
-            <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a><br/>
+            Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><b>Abstract:</b> Design of high-resolution Nyquist rate A/D converter necessitates the usage of advanced circuit techniques
+            to compensate for arising analog errors. In switched capacitor ADC, besides the well know techniques such as bottom
+            plate sampling, mismatch-independent and redundant (RSD: 1.5bit/stage) conversion for the elimination of charge
+            injection, capacitor mismatch, comparator and offset sensitivity, respectively, the most utilised circuit techniques are
+            those for OpAmp’s offset and finite gain errors cancellation. An alternative technique for compensation of the errors
+            due to finite gain and offset of Opamp in SC circuits is proposed. This novel method features a charge addition and is
+            compared to so far used approaches based on voltage addition. The concept and the results of a 5V CMOS
+            implementation of cyclic RSD ADC with ratio-independent SC technique using this correction method are discussed.</p>
         </div>
         <img src="assets/img/quote.png">
     </div>
@@ -70,8 +78,16 @@ dialog3.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
-            <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a><br/>
+            Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><b>Abstract:</b> Design of high-resolution Nyquist rate A/D converter necessitates the usage of advanced circuit techniques
+            to compensate for arising analog errors. In switched capacitor ADC, besides the well know techniques such as bottom
+            plate sampling, mismatch-independent and redundant (RSD: 1.5bit/stage) conversion for the elimination of charge
+            injection, capacitor mismatch, comparator and offset sensitivity, respectively, the most utilised circuit techniques are
+            those for OpAmp’s offset and finite gain errors cancellation. An alternative technique for compensation of the errors
+            due to finite gain and offset of Opamp in SC circuits is proposed. This novel method features a charge addition and is
+            compared to so far used approaches based on voltage addition. The concept and the results of a 5V CMOS
+            implementation of cyclic RSD ADC with ratio-independent SC technique using this correction method are discussed.</p>
         </div>
         <img src="assets/img/quote.png">
     </div>
@@ -97,8 +113,16 @@ dialog4.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
-            <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a><br/>
+            Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><b>Abstract:</b> Design of high-resolution Nyquist rate A/D converter necessitates the usage of advanced circuit techniques
+            to compensate for arising analog errors. In switched capacitor ADC, besides the well know techniques such as bottom
+            plate sampling, mismatch-independent and redundant (RSD: 1.5bit/stage) conversion for the elimination of charge
+            injection, capacitor mismatch, comparator and offset sensitivity, respectively, the most utilised circuit techniques are
+            those for OpAmp’s offset and finite gain errors cancellation. An alternative technique for compensation of the errors
+            due to finite gain and offset of Opamp in SC circuits is proposed. This novel method features a charge addition and is
+            compared to so far used approaches based on voltage addition. The concept and the results of a 5V CMOS
+            implementation of cyclic RSD ADC with ratio-independent SC technique using this correction method are discussed.</p>
         </div>
         <img src="assets/img/quote.png">
     </div>
@@ -124,8 +148,16 @@ dialog5.onclick = function () {
     </div>
     <div class="quote">
         <div>
-            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a></p>
-            <p>Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><a href="https://continiumtech.com/pdfs/A-case-study-of-a-cyclic-RSD-ADC-by-Izak-Kindt.pdf" target="_blank">An analog approach to compensate for OpAmp offset and finite gain in SC circuitry: A case study of a cyclic RSD ADC →</a><br/>
+            Reprint of the publication from 3rd IEE International Conference on Advanced A/D and D/A Conversion Techniques and their Applications (ADDA’02) Prague, Czech Republic, June 2002</p>
+            <p><b>Abstract:</b> Design of high-resolution Nyquist rate A/D converter necessitates the usage of advanced circuit techniques
+            to compensate for arising analog errors. In switched capacitor ADC, besides the well know techniques such as bottom
+            plate sampling, mismatch-independent and redundant (RSD: 1.5bit/stage) conversion for the elimination of charge
+            injection, capacitor mismatch, comparator and offset sensitivity, respectively, the most utilised circuit techniques are
+            those for OpAmp’s offset and finite gain errors cancellation. An alternative technique for compensation of the errors
+            due to finite gain and offset of Opamp in SC circuits is proposed. This novel method features a charge addition and is
+            compared to so far used approaches based on voltage addition. The concept and the results of a 5V CMOS
+            implementation of cyclic RSD ADC with ratio-independent SC technique using this correction method are discussed.</p>
         </div>
         <img src="assets/img/quote.png">
     </div>
